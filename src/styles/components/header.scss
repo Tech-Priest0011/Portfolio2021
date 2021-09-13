@@ -1,0 +1,57 @@
+/* ==========================================================================
+   header / 
+   ========================================================================== */
+
+.header {
+    padding: var(--spacing-sm);
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transform: translateY(0);
+    transition: all 0.4s $ease-out-quad;
+
+    .header-is-hidden.is-scrolling-down & {
+        transform: translateY(-100%) translateY(4px);
+        background-color: var(--color-cta);
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__brand a {
+        display: flex;
+
+        &:hover {
+            color: var(--color-text);
+            text-decoration: underline;
+        }
+
+        h4 {
+            margin-left: var(--spacing-xs);
+            font-family: var(--font-logo);
+        }
+    }
+}
+
+.header__toggle {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+
+    svg {
+        display: block;
+    }
+    @media screen and (min-width: $breakpoint-sm) {
+        display: none;
+    }
+}

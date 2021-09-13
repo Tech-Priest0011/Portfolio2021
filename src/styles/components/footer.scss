@@ -1,0 +1,15 @@
+/* ==========================================================================
+   footer / 
+   ========================================================================== */
+
+.footer {
+    background-color: var(--color-secondary);
+
+    .wrapper {
+        text-align: center;
+
+        @media screen and (min-width: $breakpoint-md) {
+            display: flex;
+        }
+    }
+}

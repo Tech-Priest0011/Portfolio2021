@@ -1,0 +1,41 @@
+/* ==========================================================================
+   snackbar / 
+   ========================================================================== */
+.snackbar {
+    opacity: 0;
+    background-color: var(--color-tertiary);
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+
+    .snackbar-is-hidden.is-scrolling-down & {
+        transform: translateY(70px);
+        background-color: var(--color-cta);
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-evenly;
+
+        .snackbar__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                padding: 0 40px;
+            }
+        }
+    }
+}
+
+.snackbar-close {
+    display: none;
+}
+
+.snackbar-open {
+    opacity: 1;
+}
