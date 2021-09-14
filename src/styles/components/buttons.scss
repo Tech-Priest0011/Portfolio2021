@@ -2,9 +2,19 @@
    buttons / 
    ========================================================================== */
 
-.button {
+   .button {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+    border-radius: 5px;
+    font-family: var(--font-primary);
 
     &:hover {
         background-color: var(--color-secondary);
+        border-color: var(--color-primary);
+        color: var(--color-primary);
     }
+}
+
+.button--small {
+    padding: 10px 20px;
 }

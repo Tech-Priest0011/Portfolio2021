@@ -13,9 +13,30 @@
     <body>
 
         <div class="site-container" data-component="Scrolly">
-            <header class="header">
-               
+            <header class="header" data-component="Header" data-scrolling=".14" data-autohide="true">
+                <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html" class="logo">Jeremy<p> Bleau</p></a>
+                    <div class="underline"></div>
+                </div>
+
+                
+                    <nav class="nav nav--primary">
+                        <ul>
+                            <li><a href="index.html" class="nav__item">Accueil</a></li>
+                            <li><a href="index.html" class="nav__item">Projets</a></li>
+                            <li><a href="index.html" class="nav__item">À propos</a></li>
+                            <li><a href="index.html" class="nav__item">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <img src="./assets/icons/menu.svg" alt="">
+                    </button>
+               </div>
             </header>
+            <div class="hero">
+                <h1>Jérémy <mark>Bleau</mark></h1>
+            </div>
             <footer class="footer">
             </footer>
         </div>

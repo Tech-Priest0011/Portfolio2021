@@ -3,5 +3,16 @@
    ========================================================================== */
 
 .hero {
-    background-color: var(--color-secondary);
+    background: var(--color-gradient);
+
+    h1{
+        font-family: var(--font-logo);
+        text-align: right;
+
+        mark{
+            display: block;
+            color: var(--color-primary);
+            background-color: transparent;
+        }
+    }
 }
