@@ -4,14 +4,13 @@
 
 :root {
     // Couleur de base
-    --color-white: #fff;
-    --color-black: #0c0f0a;
+    --color-white: #f1f1f1;
+    --color-black: #232323;
 
     // Couleurs du projet
-    --color-primary: #577097;
-    --color-secondary: #252525;
-    --color-tertiary: #a7774e;
-    --color-text: #e8e8e8;
-    --color-cta: #f5df4d;
-    --color-icons: #bff4ff;
+    --color-primary: #CCA43B;
+    --color-secondary: rgba(11, 11, 10, 0.65);
+    --color-gradient: linear-gradient(180deg, #212529 0%, #CCA43B 614.26%);
+    --color-gradient-line: linear-gradient(90deg, #F8F9FA 0%, rgba(248, 249, 250, 0) 76.72%);
+    --color-text: #22262A;
 }
