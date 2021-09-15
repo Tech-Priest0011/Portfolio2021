@@ -5,6 +5,19 @@
 .hero {
     background: var(--color-gradient);
 
+    .wrapper {
+        color: white;
+        padding: 1rem;
+        border-width: 3px;
+        border-style: solid;
+        border-image: linear-gradient(
+                to top,
+                var(--color-white),
+                rgba(0, 0, 0, 0)
+            )
+            1 100%;
+    }
+
     .title {
         display: flex;
         justify-content: center;
