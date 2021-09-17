@@ -5,6 +5,7 @@
 .footer {
     padding-top: 20px;
     background-color: var(--color-secondary);
+    z-index: 1;
 
     .wrapper {
         display: grid;

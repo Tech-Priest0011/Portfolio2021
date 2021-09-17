@@ -1,3 +1,4 @@
+import Bubbles from './components/Bubbles';
 import Carousel from './components/Carousel';
 import Form from './components/Form';
 import Header from './components/Header';
@@ -10,6 +11,7 @@ export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
+      Bubbles,
       Carousel,
       Form,
       Header,
