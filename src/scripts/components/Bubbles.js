@@ -27,7 +27,7 @@ export default class Bubbles {
 
       setTimeout(() => {
         createElement.remove();
-      }, 4000);
+      }, 16000);
     }
 
     setInterval(createBubble, 120);

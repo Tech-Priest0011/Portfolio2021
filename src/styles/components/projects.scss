@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Projects / 
+   ========================================================================== */
+
+.hero_projects {
+    h2 {
+        text-align: center;
+    }
+
+    .content {
+        .projet {
+            position: relative;
+            padding: 40px 0;
+
+            img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+            }
+
+            .infos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                background-color: rgba($color: #0b0b0a, $alpha: 0.65);
+                backdrop-filter: blur(24px);
+                border: 1px solid;
+                border-radius: 90px 0 90px 0;
+                position: absolute;
+                bottom: 10%;
+                right: -3%;
+                width: 65%;
+                text-align: center;
+
+                button.button_info {
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+
+                    h5 {
+                        font-size: 1.75rem;
+                    }
+                }
+
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+
+            &#projet2,
+            &#projet4 {
+                .infos {
+                    left: 0;
+                    border-radius: 0 90px 0 90px;
+                }
+            }
+
+            .border {
+                position: absolute;
+                bottom: 0;
+                right: 2%;
+                border: 1px solid var(--color-white);
+                height: 400px;
+                width: 100%;
+                z-index: -1;
+
+                @media screen and (min-width: $breakpoint-sm) {
+                    right: 1%;
+                }
+                @media screen and (min-width: $breakpoint-md) {
+                    right: 0.5%;
+                }
+            }
+            .b_right {
+                right: -2%;
+
+                @media screen and (min-width: $breakpoint-sm) {
+                    right: -1%;
+                }
+                @media screen and (min-width: $breakpoint-md) {
+                    right: -0.5%;
+                }
+            }
+        }
+
+        .cta {
+            max-width: 900px;
+            padding-top: 80px;
+            margin: auto;
+
+            .right {
+                text-align: right;
+            }
+
+            .aligner {
+                display: flex;
+                justify-content: center;
+                padding-top: 30px;
+            }
+        }
+    }
+}
