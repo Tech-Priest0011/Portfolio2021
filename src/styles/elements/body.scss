@@ -10,4 +10,9 @@ body {
     color: var(--color-white);
     line-height: 1.4;
     background-color: #212529;
+
+    mark {
+        color: var(--color-primary);
+        background-color: transparent;
+    }
 }

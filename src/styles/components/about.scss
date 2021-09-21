@@ -1,0 +1,179 @@
+/* ==========================================================================
+   A propos - About me / 
+   ========================================================================== */
+
+.hero_about {
+    padding-top: 0px;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        h2 {
+            font-size: 3.2rem;
+            margin-bottom: -25px;
+            z-index: 1;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                font-size: 4rem;
+                margin-bottom: -35px;
+            }
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: 5.5rem;
+                margin-bottom: -40px;
+            }
+        }
+
+        img {
+            height: 600px;
+            width: 75%;
+            object-fit: cover;
+            object-position: 100% 0;
+            filter: saturate(0);
+        }
+
+        .border {
+            border: 2px solid var(--color-white);
+            width: 75%;
+            height: 90%;
+            position: absolute;
+            bottom: -2%;
+            right: 10%;
+            z-index: -1;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+
+        h3 {
+            text-align: center;
+        }
+
+        .images {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-top: 30px;
+
+            div {
+                position: relative;
+                padding: 0;
+                margin: 0;
+                height: 80px;
+
+                h5 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    pointer-events: none;
+                    backdrop-filter: blur(8px);
+                    padding: 10px;
+                    border-radius: 90px;
+                }
+
+                img {
+                    object-fit: cover;
+                    filter: saturate(0);
+                    height: 100%;
+                    width: 100%;
+
+                    &:hover {
+                        filter: saturate(50%);
+                    }
+                }
+            }
+        }
+
+        .who {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding-top: 20px;
+
+            .resume {
+                padding: 10px 35px 10px 10px;
+                backdrop-filter: blur(50px);
+                background-color: transparent;
+                border: 2px solid var(--color-white);
+                position: relative;
+                width: 90%;
+            }
+
+            .logiciels {
+                width: 40px;
+                position: absolute;
+                top: 0;
+                right: -5%;
+                @media screen and (min-width: $breakpoint-md) {
+                    right: -2%;
+                }
+            }
+
+            .border {
+                border: 2px solid var(--color-white);
+                width: 75%;
+                height: 90%;
+                position: absolute;
+                bottom: -1.5%;
+                left: 0;
+                z-index: -1;
+
+                @media screen and (min-width: $breakpoint-sm) {
+                    left: 4%;
+                    bottom: -4%;
+                }
+            }
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-bottom: 30px;
+
+            h3 {
+                width: 100%;
+            }
+            .images {
+                order: 0;
+                width: 50%;
+                flex-direction: row;
+
+                div {
+                    transition: all 0.6s $ease-out-quad;
+                    width: 25%;
+                    height: 100%;
+                    max-height: 440px;
+
+                    h5 {
+                        display: none;
+                    }
+
+                    &:hover {
+                        width: 70%;
+
+                        h5 {
+                            display: inline;
+                            z-index: 1;
+                        }
+                    }
+                }
+            }
+            .who {
+                width: 50%;
+
+                .border {
+                    left: -102%;
+                    width: 180%;
+                }
+            }
+        }
+    }
+}
