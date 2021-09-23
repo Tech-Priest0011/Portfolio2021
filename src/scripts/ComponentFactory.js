@@ -1,5 +1,6 @@
 import Bubbles from './components/Bubbles';
 import Carousel from './components/Carousel';
+import Cursor from './components/Cursor';
 import Form from './components/Form';
 import Header from './components/Header';
 import Modal from './components/Modal';
@@ -13,6 +14,7 @@ export default class ComponentFactory {
     this.componentList = {
       Bubbles,
       Carousel,
+      Cursor,
       Form,
       Header,
       Modal,

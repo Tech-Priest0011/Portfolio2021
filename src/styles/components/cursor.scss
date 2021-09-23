@@ -1,0 +1,52 @@
+/* ==========================================================================
+   cursor / 
+   ========================================================================== */
+
+html,
+body {
+    &,
+    * {
+        cursor: none;
+    }
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #ff0000;
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+    $size: 12px;
+    width: $size;
+    height: $size;
+    background-color: var(--color-black);
+    z-index: 5;
+}
+
+.cursor-dot-outline {
+    $size: 48px;
+    width: $size;
+    height: $size;
+    background-color: rgba(218, 165, 32, 0.5);
+    z-index: 4;
+}
