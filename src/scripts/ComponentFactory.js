@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Modal from './components/Modal';
 import Scrolly from './components/Scrolly';
 import Snackbar from './components/Snackbar';
+import Typewriter from './components/Typewriter';
 import Video from './components/Video';
 
 export default class ComponentFactory {
@@ -20,6 +21,7 @@ export default class ComponentFactory {
       Modal,
       Scrolly,
       Snackbar,
+      Typewriter,
       Video,
     };
     this.init();

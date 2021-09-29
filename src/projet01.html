@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio 2021</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="cursor-dot-outline" data-component="Cursor"></div>
+        <div class="cursor-dot" data-component="Cursor"></div>
+        <div class="site-container" data-component="Scrolly">
+            <header class="header" data-component="Header" data-scrolling=".1" data-autohide="true">
+                <div class="wrapper">
+                    <div class="logo">
+                        <a href="index.html" class="logo"
+                            >Jeremy
+                            <p>Bleau</p></a
+                        >
+                        <div class="underline"></div>
+                    </div>
+
+                    <nav class="nav nav--primary">
+                        <ul>
+                            <li><a href="index.html" class="nav__item">Accueil</a></li>
+                            <li><a href="projects.html" class="nav__item">Projets</a></li>
+                            <li><a href="about.html" class="nav__item">À propos</a></li>
+                            <li><a href="contact.html" class="nav__item">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <img src="./assets/icons/menu.svg" alt="menu" />
+                    </button>
+                </div>
+            </header>
+
+            <section class="hero hero_projet">
+                <div class="wrapper">
+                    <div class="title">
+                        <h2>Site <mark>Événementiel</mark></h2>
+                        <h5><mark>Développement full-stack</mark> et design d’un site web.</h5>
+                    </div>
+
+                    
+                    <div class="aligner">
+                        <button class="button">
+                            <a href="contact.html"><h5>Contact -&gt;</h5></a>
+                        </button>
+                    </div>
+                </div>
+                <section class="bubbles" data-component="Bubbles"></section>
+                <section class="background"></section>
+            </section>
+
+            <footer class="footer">
+                <div class="wrapper">
+                    <div class="medias">
+                        <a href="https://codepen.io/tech-priest0011" target="blank"
+                            ><img src="./assets/icons/codepen-brands.svg" alt="codepen"
+                        /></a>
+                        <a href="https://github.com/Tech-Priest0011" target="blank"
+                            ><img src="./assets/icons/github-brands.svg" alt="github"
+                        /></a>
+                        <a href="http://www.linkedin.com/in/jeremy-bleau-9375a0220" target="blank"
+                            ><img src="./assets/icons/linkedin-brands.svg" alt="linkedin"
+                        /></a>
+                        <a href="https://sketchfab.com/JeremyBleau" target="blank"
+                            ><img src="./assets/icons/sketchfab.svg" alt="sketchfab" id="sketchfab"
+                        /></a>
+                        <a href="https://twitter.com/Jay_Bleau" target="blank"
+                            ><img src="./assets/icons/twitter-brands.svg" alt="twitter"
+                        /></a>
+                        <a href="https://www.youtube.com/channel/UC0t7AJ98rpMiomY4hw7HPVA" target="blank"
+                            ><img src="./assets/icons/youtube-brands.svg" alt="youtube"
+                        /></a>
+                    </div>
+                    <div class="nav nav--footer">
+                        <ul>
+                            <li><a href="index.html" class="nav__item">Accueil</a></li>
+                            <li class="line"></li>
+                            <li><a href="projects.html" class="nav__item">Projets</a></li>
+                            <li class="line"></li>
+                            <li><a href="about.html" class="nav__item">À propos</a></li>
+                            <li class="line"></li>
+                            <li><a href="contact.html" class="nav__item">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; Jeremy Bleau 2021</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+<!-- Credits: 
+     Codepen.io:
+     Kyle Brumm with Custom Dot Cursor
+     Magdalena with Bubble background
+    -->
+
+</html>

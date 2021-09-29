@@ -26,6 +26,11 @@
             )
             1 100%;
     }
+
+    .aligner {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .hero_accueil {
@@ -159,8 +164,5 @@
         }
     }
 
-    .aligner {
-        display: flex;
-        justify-content: center;
-    }
+    
 }

@@ -25,24 +25,7 @@ export default class Modal {
   updateContent() {
     if (this.modalId == 'tpl-modal-tool') {
       this.modalElement.innerHTML = Utils.parseTemplate(this.modalElement.innerHTML, { title: this.element.innerHTML });
-      setTimeout(this.colorChange.bind(this), 100);
-    }
-  }
-
-  colorChange() {
-    if (this.element.dataset.modalTitle == 'lettuce') {
-      document.querySelector('.modal__content').style.backgroundColor = '#009ddc';
-      document.querySelector('.modal__content').style.color = 'white';
-    }
-    if (this.element.dataset.modalTitle == 'asparagus' || this.element.dataset.modalTitle == 'eggplant') {
-      document.querySelector('.modal__content').style.backgroundColor = '#f26430';
-    }
-    if (this.element.dataset.modalTitle == 'pepper') {
-      document.querySelector('.modal__content').style.backgroundColor = '#fbc700';
-    }
-    if (this.element.dataset.modalTitle == 'potato') {
-      document.querySelector('.modal__content').style.backgroundColor = '#373c45';
-      document.querySelector('.modal__content').style.color = 'white';
+      
     }
   }
 

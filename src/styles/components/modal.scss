@@ -1,0 +1,190 @@
+/* ==========================================================================
+   Fenetres modals / 
+   ========================================================================== */
+   .modal {
+    --modal-padding: 60px;
+    @include cover(fixed);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.4s $ease-out-expo 0.4s, transform 0s 0.4s;
+    overflow: hidden;
+    z-index: 7;
+
+    .modal-is-active & {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.4s $ease-out-expo, transform 0s;
+    }
+}
+
+.modal__scrim {
+    background-color: var(--color-black);
+    opacity: 0.8;
+    @include cover();
+}
+
+.modal__box {
+    background: var(--color-gradient);
+    color: var(--color-black);
+    width: 0;
+    height: 0;
+    top: 10%;
+    position: relative;
+    opacity: 0;
+    transition: all 1s $ease-in-expo;
+
+    .modal-is-active & {
+        opacity: 1;
+        width: 80vw;
+        height: 60vh;
+        transition: all 1.4s $ease-out-expo;
+
+        @media screen and (min-width: $breakpoint-md) {
+            height: 80vh;
+        }
+    }
+}
+
+.modal__content {
+    height: 100%;
+    padding: var(--modal-padding);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    img{
+        height: 100%;
+        width: 30%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    h5{
+        position: absolute;
+        top: 40%;
+        left: 3%;
+        color: var(--color-white);
+        font-size: 1.3rem;
+        padding: 10px;
+            background: rgba(196, 196, 196, 0.2);
+backdrop-filter: blur(8px);
+border-radius: 50px;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            font-size: 2rem;
+            
+        }
+    }
+
+    ul{
+        margin-left: 20px;
+        color: white;
+
+        @media screen and (min-width: 480px) {
+            margin-left: 40px;
+        }
+
+        @media screen and (min-width: 560px) {
+            margin-left: 80px;
+        }
+
+        @media screen and (min-width: 680px) {
+            margin-left: 100px;
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+            margin-left: 25%;
+        }
+        
+
+        h4{
+            font-size: 1rem;
+            font-weight: lighter;
+            padding: 5px 0;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                font-size: 2rem;
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: 2.5rem;
+            }
+        }
+
+        li{
+            list-style: none;
+            font-size: 0.6rem;
+            margin-bottom: 15px;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                font-size: 1rem;
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: 1.2rem;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.modal__close {
+    --bar-width: 2px;
+    --button-size: 30px;
+    background: var(--color-primary);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    height: var(--button-size);
+    outline: none;
+    padding: 0;
+    position: absolute;
+    right: calc(var(--modal-padding) / 2);
+    top: calc(var(--modal-padding) / 2);
+    width: var(--button-size);
+    &::before,
+    &::after {
+        background: var(--color-black);
+        bottom: 0;
+        content: '';
+        height: var(--bar-width);
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        position: absolute;
+        transition: transform 0.3s $ease-out-expo;
+        width: 80%;
+    }
+    &::before {
+        transform: rotate(-45deg);
+    }
+    &::after {
+        transform: rotate(45deg);
+    }
+    &:hover {
+        opacity: 0.7;
+        &::before {
+            transform: rotate(0);
+        }
+        &::after {
+            transform: rotate(0);
+        }
+    }
+}
+
+.modal-is-active body {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Single fenetre modal / 
+   ========================================================================== */
+

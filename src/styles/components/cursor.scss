@@ -40,7 +40,7 @@ html {
     width: $size;
     height: $size;
     background-color: var(--color-black);
-    z-index: 5;
+    z-index: 10;
 }
 
 .cursor-dot-outline {
@@ -48,5 +48,5 @@ html {
     width: $size;
     height: $size;
     background-color: rgba(218, 165, 32, 0.5);
-    z-index: 4;
+    z-index: 9;
 }

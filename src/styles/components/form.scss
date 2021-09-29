@@ -72,6 +72,14 @@
     .is-sent & {
         padding-top: 82%;
         display: block;
+
+        @media screen and(min-width: $breakpoint-sm) {
+            padding-top: 25%;
+        }
+        
+        @media screen and(min-width: $breakpoint-md) {
+            padding-top: 10%;
+        }
     }
 }
 
