@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio 2021</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="cursor-dot-outline" data-component="Cursor"></div>
+        <div class="cursor-dot" data-component="Cursor"></div>
+        <div class="site-container" data-component="Scrolly">
+            <header class="header" data-component="Header" data-scrolling=".1" data-autohide="true">
+                <div class="wrapper">
+                    <div class="logo">
+                        <a href="index.html" class="logo"
+                            >Jeremy
+                            <p>Bleau</p></a
+                        >
+                        <div class="underline"></div>
+                    </div>
+
+                    <nav class="nav nav--primary">
+                        <ul>
+                            <li><a href="index.html" class="nav__item">Accueil</a></li>
+                            <li><a href="projects.html" class="nav__item">Projets</a></li>
+                            <li><a href="about.html" class="nav__item">À propos</a></li>
+                            <li><a href="contact.html" class="nav__item">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <img src="./assets/icons/menu.svg" alt="menu" />
+                    </button>
+                </div>
+            </header>
+
+            <section class="hero hero_projet">
+                <div class="wrapper">
+                    <div class="title" data-scrolly="fromBottom">
+                        <h2>Sites <mark>Wordpress</mark></h2>
+                        <h5><mark>Intégration d'un thème personnalisé sur </mark>WordPress.</h5>
+                        <img src="./assets/images/php2.JPG" alt="php">
+                    </div>
+
+                    <article class="content">
+                        <div class="grid" >
+                            <p data-scrolly="fromLeft"><mark>Développement</mark> d’une maquette donnée par nos professeurs.
+                                 À partir d’un fichier de base nous devons faire le html, le css et quelques éléments prédéterminés en JavaScript (Swiper, Snackbar, Scrolly, etc).
+                                  Par la suite nous mettons <mark>en ligne</mark> le site sur notre espace étudiant, nous changeons aussi notre code pour l’<mark>adapter</mark> en  PHP.
+                                 Nous terminons avec les ACF et CPT en ajoutant le contenu final par WordPress à la place de le mettre en html.</p>
+                            <div class="resume" data-scrolly="fromRight">
+                                <h5>Type de Projet</h5>
+                                <h6><mark>Scolaire</mark></h6>
+                                <h5>Langage</h5>
+                                <img src="./assets/icons/html5.svg" alt="html">
+                                <img src="./assets/icons/sass.svg" alt="css">
+                                <img src="./assets/icons/js6.svg" alt="js">
+                                <img src="./assets/icons/php.svg" alt="css">
+                                <img src="./assets/icons/wp.svg" alt="js">
+                                <h5>Crédits</h5>
+                                <h6>Images: <mark>Unsplash</mark></h6>
+                                <h6>Fonts: <mark>Google Fonts</mark></h6>
+                            </div>
+                            <img src="./assets/images/wp1.JPG" alt="WordPress" data-scrolly="fromLeft">
+                            <p data-scrolly="fromRight">Pour certains projets nous avons utilisé des extensions
+                                 WordPress pour créer des <mark>formulaires</mark> ou pour maximiser la <mark>sécurité</mark> de notre site.
+                                 Nous avons aussi vu des <mark>outils</mark> externes comme GenerateWP pour générer des CPT.</p>
+                        </div>
+                    </article>
+                    
+                    <div class="aligner">
+                        <button class="button">
+                            <a href="projet03.html"><h5>Projet Suivant -&gt;</h5></a>
+                        </button>
+                    </div>
+                </div>
+                <section class="bubbles" data-component="Bubbles"></section>
+                <section class="background"></section>
+            </section>
+
+            <footer class="footer">
+                <div class="wrapper">
+                    <div class="medias">
+                        <a href="https://codepen.io/tech-priest0011" target="blank"
+                            ><img src="./assets/icons/codepen-brands.svg" alt="codepen"
+                        /></a>
+                        <a href="https://github.com/Tech-Priest0011" target="blank"
+                            ><img src="./assets/icons/github-brands.svg" alt="github"
+                        /></a>
+                        <a href="http://www.linkedin.com/in/jeremy-bleau-9375a0220" target="blank"
+                            ><img src="./assets/icons/linkedin-brands.svg" alt="linkedin"
+                        /></a>
+                        <a href="https://sketchfab.com/JeremyBleau" target="blank"
+                            ><img src="./assets/icons/sketchfab.svg" alt="sketchfab" id="sketchfab"
+                        /></a>
+                        <a href="https://twitter.com/Jay_Bleau" target="blank"
+                            ><img src="./assets/icons/twitter-brands.svg" alt="twitter"
+                        /></a>
+                        <a href="https://www.youtube.com/channel/UC0t7AJ98rpMiomY4hw7HPVA" target="blank"
+                            ><img src="./assets/icons/youtube-brands.svg" alt="youtube"
+                        /></a>
+                    </div>
+                    <div class="nav nav--footer">
+                        <ul>
+                            <li><a href="index.html" class="nav__item">Accueil</a></li>
+                            <li class="line"></li>
+                            <li><a href="projects.html" class="nav__item">Projets</a></li>
+                            <li class="line"></li>
+                            <li><a href="about.html" class="nav__item">À propos</a></li>
+                            <li class="line"></li>
+                            <li><a href="contact.html" class="nav__item">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; Jeremy Bleau 2021</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+<!-- Credits: 
+     Codepen.io:
+     Kyle Brumm with Custom Dot Cursor
+     Magdalena with Bubble background
+    -->
+
+</html>

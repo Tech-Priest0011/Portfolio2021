@@ -50,8 +50,20 @@
         flex-direction: column;
         padding-top: 60px;
 
+        p{
+            font-size: 1rem;
+        }
+
         h3 {
             text-align: center;
+        }
+
+        h6{
+            font-size: 1.5rem;
+
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: 2rem;
+            }
         }
 
         .images {
@@ -103,6 +115,7 @@
                 backdrop-filter: blur(50px);
                 background-color: transparent;
                 border: 2px solid var(--color-white);
+                border-right: transparent;
                 position: relative;
                 width: 90%;
             }

@@ -8,7 +8,7 @@ export default class Scrolly {
     this.element = element;
     this.options = {
       rootMargin:
-        '0px 0px 0px 450px' /* Peut etre changer pour quand le scrolly s'active (dans le sens des aiguilles) */,
+        '0px 0px -275px 0px' /* Peut etre changer pour quand le scrolly s'active (dans le sens des aiguilles) */,
     };
     this.init();
   }
