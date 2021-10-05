@@ -39,7 +39,8 @@ html {
     $size: 12px;
     width: $size;
     height: $size;
-    background-color: var(--color-black);
+    background-color: rgba($color: #111111, $alpha: 1);
+    border: 1px solid var(--color-white);
     z-index: 10;
 }
 
