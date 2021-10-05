@@ -78,4 +78,21 @@
             }
         }
     }
+
+    .border {
+        position: absolute;
+        bottom: -3%;
+        right: 2%;
+        border: 1px solid var(--color-white);
+        height: 400px;
+        width: 100%;
+        z-index: -1;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            right: 1%;
+        }
+        @media screen and (min-width: $breakpoint-md) {
+            right: 0.5%;
+        }
+    }
 }

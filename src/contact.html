@@ -40,91 +40,102 @@
 
             <section class="hero hero_contact">
                 <div class="wrapper">
-
                     <h2>Établir un <mark>contact</mark></h2>
 
                     <div class="indirect">
+                        <article class="infos" data-scrolly="fromLeft">
+                            <span id="phone">
+                                <a href="tel: 438-409-9621">
+                                    <img src="./assets/icons/phone.svg" alt="mobile" />
+                                    <h6>+1 438-409-9621</h6>
+                                </a>
+                            </span>
+                            <span id="cv">
+                                <a href="./assets/images/BleauJ_CV.pdf" download>
+                                    <img src="./assets/icons/letter.svg" alt="letter" />
+                                    <h6>Télécharger mon CV</h6>
+                                </a>
+                            </span>
+                            <span id="linkedin">
+                                <a href="https://www.linkedin.com/in/jeremy-bleau-9375a0220" target="_blank">
+                                    <img src="./assets/icons/linkedin-brands.svg" alt="linkedin" />
+                                    <h6>Jeremy Bleau</h6>
+                                </a>
+                            </span>
+                        </article>
 
-                    <article class="infos" data-scrolly="fromLeft">
-                        <span id="phone">
-                            <a href="tel: 438-409-9621">
-                            <img src="./assets/icons/phone.svg" alt="mobile">
-                            <h6>+1 438-409-9621</h6>
-                            </a>
-                        </span>
-                        <span id="cv">
-                            <a href="./assets/images/BleauJ_CV.pdf" download>
-                            <img src="./assets/icons/letter.svg" alt="letter">
-                            <h6>Télécharger mon CV</h6>
-                        </a>
-                        </span>
-                        <span id="linkedin">
-                            <a href="https://www.linkedin.com/in/jeremy-bleau-9375a0220" target="_blank">
-                            <img src="./assets/icons/linkedin-brands.svg" alt="linkedin">
-                            <h6>Jeremy Bleau</h6>
-                        </a>
-                        </span>
-                    </article>
-                    
-                    <div class="medias" data-scrolly="fromLeft">
-                        <p>Seulement envie de me <mark>suivre?</mark></p>
-                        <a href="https://codepen.io/tech-priest0011" target="blank"
-                            ><img src="./assets/icons/codepen-brands.svg" alt="codepen"
-                        /></a>
-                        <a href="https://github.com/Tech-Priest0011" target="blank"
-                            ><img src="./assets/icons/github-brands.svg" alt="github"
-                        /></a>
-                        <a href="https://sketchfab.com/JeremyBleau" target="blank"
-                            ><img src="./assets/icons/sketchfab.svg" alt="sketchfab" id="sketchfab"
-                        /></a>
-                        <a href="https://twitter.com/Jay_Bleau" target="blank"
-                            ><img src="./assets/icons/twitter-brands.svg" alt="twitter"
-                        /></a>
-                        <a href="https://www.youtube.com/channel/UC0t7AJ98rpMiomY4hw7HPVA" target="blank"
-                            ><img src="./assets/icons/youtube-brands.svg" alt="youtube"
-                        /></a>
+                        <div class="medias" data-scrolly="fromLeft">
+                            <p>Seulement envie de me <mark>suivre?</mark></p>
+                            <a href="https://codepen.io/tech-priest0011" target="blank"
+                                ><img src="./assets/icons/codepen-brands.svg" alt="codepen"
+                            /></a>
+                            <a href="https://github.com/Tech-Priest0011" target="blank"
+                                ><img src="./assets/icons/github-brands.svg" alt="github"
+                            /></a>
+                            <a href="https://sketchfab.com/JeremyBleau" target="blank"
+                                ><img src="./assets/icons/sketchfab.svg" alt="sketchfab" id="sketchfab"
+                            /></a>
+                            <a href="https://twitter.com/Jay_Bleau" target="blank"
+                                ><img src="./assets/icons/twitter-brands.svg" alt="twitter"
+                            /></a>
+                            <a href="https://www.youtube.com/channel/UC0t7AJ98rpMiomY4hw7HPVA" target="blank"
+                                ><img src="./assets/icons/youtube-brands.svg" alt="youtube"
+                            /></a>
+                        </div>
                     </div>
 
-                </div>
-
                     <section class="formulaire" data-scrolly="fromRight">
-                        <form action="mailto:jeremybleau@outlook.com" method=”POST” enctype=”multipart/form-data” class="form" autocomplete="off" data-component="Form">
+                        <form
+                            action="mailto:jeremybleau@outlook.com"
+                            class="form"
+                            autocomplete="off"
+                            data-component="Form"
+                        >
                             <div class="form__body">
                                 <h5>Envoyer un <mark>Courriel</mark></h5>
                                 <fieldset class="grid">
                                     <div class="input">
-                                        <label for="name" class="input__label">
-                                            Nom
-                                        </label>
-                                        <input class="input__element" type="text"
-                                        name="name"
-                                        id="name"
-                                        placeholder="Nom"
-                                        required>
+                                        <label for="name" class="input__label"> Nom </label>
+                                        <input
+                                            class="input__element"
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            placeholder="Nom"
+                                            required
+                                        />
                                     </div>
                                     <div class="input">
-                                        <label for="email" class="input__label">
-                                            Courriel
-                                        </label>
-                                        <input class="input__element" type="email"
-                                        name="email"
-                                        id="email"
-                                        placeholder="Courriel"
-                                        required>
+                                        <label for="email" class="input__label"> Courriel </label>
+                                        <input
+                                            class="input__element"
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            placeholder="Courriel"
+                                            required
+                                        />
                                     </div>
                                     <div class="input textarea u-grid-fullwidth">
-                                        <label for="comment" class="input__label">
-                                            Message
-                                        </label>
-                                        <textarea class="input__element"
-                                        name="comment"
-                                        id="comment"
-                                        maxlength="250"
-                                        required></textarea>
+                                        <label for="comment" class="input__label"> Message </label>
+                                        <textarea
+                                            class="input__element"
+                                            name="comment"
+                                            id="comment"
+                                            maxlength="250"
+                                            required
+                                        ></textarea>
                                     </div>
 
                                     <footer class="form__footer">
-                                        <button class="button button--large">Envoyer -&gt;</button>
+                                        <a
+                                            class="button"
+                                            href="mailto:jeremybleau@outlook.com"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Envoyer -&gt;
+                                        </a>
                                     </footer>
                                 </fieldset>
                             </div>
@@ -133,10 +144,8 @@
                                 <h3>Merci</h3>
                                 <p>Votre <mark>message</mark> a été envoyer</p>
                             </div>
-
                         </form>
                     </section>
-                    
                 </div>
                 <section class="bubbles" data-component="Bubbles"></section>
                 <section class="background"></section>
@@ -144,10 +153,9 @@
         </div>
     </body>
 
-<!-- Credits: 
+    <!-- Credits: 
      Codepen.io:
      Kyle Brumm with Custom Dot Cursor
      Magdalena with Bubble background 
     -->
-
 </html>
