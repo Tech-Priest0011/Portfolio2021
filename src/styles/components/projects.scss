@@ -10,7 +10,11 @@
     .content {
         .projet {
             position: relative;
-            padding: 40px 0;
+            padding: 40px 0 300px 0;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                padding: 40px 0;
+            }
 
             img {
                 width: 100%;
@@ -28,10 +32,15 @@
                 border: 1px solid;
                 border-radius: 90px 0 90px 0;
                 position: absolute;
-                bottom: 10%;
+                bottom: 0%;
                 right: -3%;
-                width: 65%;
+                width: 100%;
                 text-align: center;
+
+                @media screen and (min-width: $breakpoint-sm) {
+                    bottom: 10%;
+                    width: 65%;
+                }
 
                 button.button_info {
                     padding-bottom: 0;

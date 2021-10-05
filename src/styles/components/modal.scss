@@ -1,7 +1,7 @@
 /* ==========================================================================
    Fenetres modals / 
    ========================================================================== */
-   .modal {
+.modal {
     --modal-padding: 60px;
     @include cover(fixed);
     display: flex;
@@ -27,7 +27,6 @@
 }
 
 .modal__box {
-    background: var(--color-gradient);
     color: var(--color-black);
     width: 0;
     height: 0;
@@ -49,15 +48,24 @@
 }
 
 .modal__content {
-    height: 100%;
+    background: var(--color-gradient);
+    height: 75vh;
+    width: 100%;
     padding: var(--modal-padding);
+    padding-top: 15%;
+    padding-right: 5px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 
-    img{
+    @media screen and (min-width: $breakpoint-md) {
+        height: 100%;
+        padding-top: 5%;
+    }
+
+    img {
         height: 100%;
         width: 30%;
         object-fit: cover;
@@ -66,26 +74,25 @@
         left: 0;
     }
 
-    h5{
+    h5 {
         position: absolute;
-        top: 40%;
+        top: 3%;
         left: 3%;
         color: var(--color-white);
         font-size: 1.3rem;
         padding: 10px;
-            background: rgba(196, 196, 196, 0.2);
-backdrop-filter: blur(8px);
-border-radius: 50px;
+        background: rgba(196, 196, 196, 0.2);
+        backdrop-filter: blur(8px);
+        border-radius: 50px;
 
         @media screen and (min-width: $breakpoint-sm) {
             font-size: 2rem;
-            
         }
     }
 
-    ul{
+    ul {
         margin-left: 20px;
-        color: white;
+        color: var(--color-white);
 
         @media screen and (min-width: 480px) {
             margin-left: 40px;
@@ -97,14 +104,14 @@ border-radius: 50px;
 
         @media screen and (min-width: 680px) {
             margin-left: 100px;
+            padding-right: 50px;
         }
 
         @media screen and (min-width: $breakpoint-sm) {
             margin-left: 25%;
         }
-        
 
-        h4{
+        h4 {
             font-size: 1rem;
             font-weight: lighter;
             padding: 5px 0;
@@ -118,10 +125,11 @@ border-radius: 50px;
             }
         }
 
-        li{
+        li {
             list-style: none;
-            font-size: 0.6rem;
+            font-size: 0.88rem;
             margin-bottom: 15px;
+            width: 100%;
 
             @media screen and (min-width: $breakpoint-sm) {
                 font-size: 1rem;
@@ -183,8 +191,3 @@ border-radius: 50px;
 .modal-is-active body {
     overflow: hidden;
 }
-
-/* ==========================================================================
-   Single fenetre modal / 
-   ========================================================================== */
-

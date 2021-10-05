@@ -1,6 +1,6 @@
 /* ==========================================================================
    formulaire / 
-   ========================================================================== */   
+   ========================================================================== */
 .formulaire {
     h5 {
         text-align: center;
@@ -8,12 +8,12 @@
         margin-bottom: 30px;
     }
 
-    footer{
+    footer {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        button{
+        button {
             margin-bottom: 0;
         }
 
@@ -22,7 +22,6 @@
             padding-left: auto;
             margin-left: auto;
         }
-        
     }
 }
 
@@ -76,7 +75,7 @@
         @media screen and(min-width: $breakpoint-sm) {
             padding-top: 25%;
         }
-        
+
         @media screen and(min-width: $breakpoint-md) {
             padding-top: 10%;
         }
@@ -132,7 +131,6 @@
         color: rgba($color: #f1f1f1, $alpha: 0.3);
     }
 }
-
 
 /*
      textarea

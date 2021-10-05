@@ -2,20 +2,18 @@
    contact / 
    ========================================================================== */
 
-   .hero_contact{
-
-    .wrapper{
+.hero_contact {
+    .wrapper {
         text-align: center;
 
-        h2{
+        h2 {
             font-size: 3rem;
         }
 
-        .infos{
-
-            span{
-
-                &#cv img , &#linkedin img{
+        .infos {
+            span {
+                &#cv img,
+                &#linkedin img {
                     width: 10%;
 
                     @media screen and (min-width: $breakpoint-sm) {
@@ -23,56 +21,54 @@
                     }
                 }
 
-                &#phone img{
+                &#phone img {
                     width: 6%;
                 }
 
-
-                a{
+                a {
                     width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
-                    &:hover{
+                    &:hover {
                         color: var(--color-white);
                     }
                 }
-                
+
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
-                &:hover{
+                &:hover {
                     text-decoration: underline;
                 }
 
-                img{
+                img {
                     filter: invert(74%) sepia(32%) saturate(826%)
                         hue-rotate(2deg) brightness(84%) contrast(92%);
                     width: 7%;
                 }
 
-                h6{
+                h6 {
                     padding: 30px;
                 }
             }
         }
 
-        .medias{
-
-            img{
+        .medias {
+            img {
                 width: 10%;
                 margin: 10px;
-                filter: invert(100%) sepia(5%) saturate(61%) hue-rotate(193deg) brightness(113%) contrast(89%);
+                filter: invert(100%) sepia(5%) saturate(61%) hue-rotate(193deg)
+                    brightness(113%) contrast(89%);
 
-                &:hover{
+                &:hover {
                     filter: invert(74%) sepia(32%) saturate(826%)
                         hue-rotate(2deg) brightness(84%) contrast(92%);
                 }
             }
         }
-
 
         @media screen and (min-width: $breakpoint-md) {
             text-align: center;
@@ -81,14 +77,14 @@
             grid-template-columns: 1fr 1.5fr;
             grid-template-rows: 1fr 0.3fr;
 
-            h2{
+            h2 {
                 position: absolute;
                 top: 4%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
 
-            .indirect{
+            .indirect {
                 grid-column: 1;
                 padding-top: 80px;
                 display: flex;
@@ -96,10 +92,9 @@
                 justify-content: space-between;
             }
 
-            .formulaire{
+            .formulaire {
                 padding-top: 80px;
             }
         }
     }
-    
-   }
+}
