@@ -5,11 +5,15 @@
 .hero_projet {
     .title {
         text-align: center;
-        margin: 50px;
+        margin: 50px 0;
 
         h2 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin-bottom: 20px;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                font-size: 3.5rem;
+            }
         }
 
         h5 {
@@ -17,7 +21,13 @@
         }
 
         img {
-            width: 100vw;
+            height: 500px;
+            object-fit: cover;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                width: 100%;
+                height: inherit;
+            }
         }
     }
 
