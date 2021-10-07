@@ -5,6 +5,11 @@
 .hero {
     position: relative;
 
+    .invisible{
+        opacity: 0;
+        position: absolute;
+    }
+
     .background {
         background: var(--color-gradient);
         z-index: -2;

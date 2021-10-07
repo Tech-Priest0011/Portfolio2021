@@ -85,6 +85,10 @@
         backdrop-filter: blur(8px);
         border-radius: 50px;
 
+        @supports not (backdrop-filter: none) {
+            background-color: rgba($color: black, $alpha: 0.5);
+        }
+
         @media screen and (min-width: $breakpoint-sm) {
             font-size: 2rem;
         }

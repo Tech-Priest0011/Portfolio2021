@@ -13,6 +13,10 @@
     transition: all 0.4s $ease-out-quad;
     backdrop-filter: blur(10px);
 
+    @supports not (backdrop-filter: none) {
+        background-color: rgba($color: black, $alpha: 0.8);
+    }
+
     .logo {
         position: relative;
         font-size: var(--font-size-h5);
@@ -103,3 +107,4 @@
         display: none;
     }
 }
+

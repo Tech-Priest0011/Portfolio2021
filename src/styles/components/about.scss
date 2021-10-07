@@ -89,6 +89,10 @@
                     backdrop-filter: blur(8px);
                     padding: 10px;
                     border-radius: 90px;
+
+                    @supports not (backdrop-filter: none) {
+                        background-color: rgba($color: black, $alpha: 0.8);
+                    }
                 }
 
                 img {
@@ -119,6 +123,10 @@
                 border-right: transparent;
                 position: relative;
                 width: 90%;
+
+                @supports not (backdrop-filter: none) {
+                    background-color: rgba($color: black, $alpha: 0.8);
+                }
             }
 
             .logiciels {

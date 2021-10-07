@@ -37,6 +37,10 @@
                 width: 100%;
                 text-align: center;
 
+                @supports not (backdrop-filter: none) {
+                    background-color: rgba($color: black, $alpha: 0.5);
+                }
+
                 @media screen and (min-width: $breakpoint-sm) {
                     bottom: 10%;
                     width: 65%;
